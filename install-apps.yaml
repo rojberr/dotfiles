@@ -1,0 +1,11 @@
+---
+- name: Install apps
+  hosts: localhost
+  connection: local
+  ignore_errors: "{{ ALLOW_ERRORS }}"
+
+  tasks:
+    - name: Install vim
+      community.general.homebrew:
+        name: vim
+        state: present
