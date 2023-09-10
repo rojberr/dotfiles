@@ -1,0 +1,12 @@
+---
+- name: general
+  src: https://galaxy.ansible.com/download/community-general-7.3.0.tar.gz
+  version: v1.1.0
+
+- name: docker
+  src: https://galaxy.ansible.com/download/community-docker-3.4.8.tar.gz
+  version: 3.4.8
+
+- name: hardening
+  src: https://galaxy.ansible.com/download/devsec-hardening-8.8.0.tar.gz
+  version: 8.8.0
