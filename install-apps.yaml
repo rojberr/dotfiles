@@ -16,3 +16,8 @@
         state: latest
       loop: "{{ homebrew_apps_to_install }}"
 
+    - name: Create symlink for tmux config
+      file:
+        src: "{{ playbook_dir }}/configs/.tmux.conf"
+        dest: ~/.tmux.conf
+        state: link
