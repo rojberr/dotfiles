@@ -3,9 +3,16 @@
   hosts: localhost
   connection: local
   ignore_errors: "{{ ALLOW_ERRORS }}"
+  vars:
+    homebrew_apps_to_install: [ "vim", "obsidian", "tree", "tmux", "curl", "sops", "vercel-cli", "terraform-docs"]
 
   tasks:
-    - name: Install vim
+    - name: Install homebrew
+      ansible.builtin.shell: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    - name: Install homebrew apps
       community.general.homebrew:
-        name: vim
-        state: present
+        name: "{{ item }}"
+        state: latest
+      loop: "{{ homebrew_apps_to_install }}"
+
