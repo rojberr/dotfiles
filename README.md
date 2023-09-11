@@ -2,7 +2,7 @@
 
 Here you will find files I use to configure my Linux workstations. 
 
-![Perfect setup ;)](perfect-setup.jpg)
+![Perfect setup ;)](images/perfect-setup.jpg)
 
 ## Installation 👨‍💻
 
