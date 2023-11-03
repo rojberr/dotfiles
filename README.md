@@ -4,6 +4,14 @@ Here you will find files I use to configure my Linux workstations.
 
 ![Perfect setup ;)](images/perfect-setup.jpg)
 
+## Contents
+
+What's in here?
+- all my `brew` dependencies including: applications, fonts, etc. See [`Brewfile`](https://github.com/rojberr/dotfiles/blob/master/Brewfile)
+- all my `scripts` that I use daily. See [`scripts/`](https://github.com/rojberr/dotfiles/blob/master/scripts/)
+- all my `shell` settings. See [`shell/`](https://github.com/rojberr/dotfiles/tree/master/shell)
+- all my `configuration` files. See [`config/`](https://github.com/rojberr/dotfiles/tree/master/config)
+
 ## Installation 👨‍💻
 
 *Disclaimer: This is my personal solution! You may need to customize it a bit to make it work with your machine.
