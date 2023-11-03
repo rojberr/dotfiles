@@ -6,6 +6,7 @@ if python3 -m pip -V; then
   python3 get-pip.py --user
 else
   echo "Install python3"
+  exit 1
 fi
 
 # Install ansible, dependencies, roles
