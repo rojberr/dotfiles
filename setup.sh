@@ -5,7 +5,7 @@ if python3 -m pip -V; then
   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
   python3 get-pip.py --user
 else
-  echo "Install python3"
+  echo "ERROR: Install python3"
   exit 1
 fi
 
