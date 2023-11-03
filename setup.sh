@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install pip for ansible installation
-if python3 -m pip -V; then
+if command -v python3 >/dev/null 2>&1 && echo "Python 3 is installed"; then
   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
   python3 get-pip.py --user
 else
