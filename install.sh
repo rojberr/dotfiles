@@ -27,3 +27,7 @@ brew bundle
 # Install NvChar
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
+# Load .bash_aliases
+rm -f ~/.bash_aliases
+ln -s `pwd`/config/.bash_aliases ~/.bash_aliases
+
