@@ -1,10 +1,10 @@
 # dotfiles
 
-Here you will find files I use to configure my Linux workstations. 
+Here you will find files I use to configure my Linux/MacOS workstations. 
 
 ![Perfect setup ;)](images/perfect-setup.jpg)
 
-## Contents
+## Contents 
 
 What's in here?
 - all my `brew` dependencies including: applications, fonts, etc. See [`Brewfile`](https://github.com/rojberr/dotfiles/blob/master/Brewfile)
@@ -36,7 +36,6 @@ cd dotfiles-0.0.1 && set -- -f; source ./setup.sh
 ```
 
 ## Why Dotfiles? 💡
-
 
 This repository install quickly all required dependencies to work with code.
 It sets up the toolchain, that lets change between env versions. It also makes my
