@@ -25,16 +25,6 @@ To update your desktop run:
 git clone https://github.com/rojberr/dotfiles.git && cd dotfiles && set -- -f; source ./setup.sh
 ```
 
-Git-free installation
-To install without using git use:
-
-```bash
-cd; \
-curl -L https://github.com/rojberr/dotfiles/archive/0.0.1.tar.gz -o dotfiles-0.0.1.tar.gz && \
-tar -zxvf dotfiles-0.0.1.tar.gz && \
-cd dotfiles-0.0.1 && set -- -f; source ./setup.sh
-```
-
 ## Why Dotfiles? 💡
 
 This repository install quickly all required dependencies to work with code.
@@ -69,7 +59,7 @@ brew bumdle dump
 
 To import from Brewfile:
 ```bash
-brew bundl
+brew bundle
 ```
 
 
@@ -99,4 +89,15 @@ python3 -m pip show ansible # Checks the ansible package version
 
 Add Ansible command shell completion
 python3 -m pip install --user argcomplete
+
+### tbc - Git-free installation
+
+To install without using git use:
+
+```bash
+cd; \
+curl -L https://github.com/rojberr/dotfiles/archive/0.0.1.tar.gz -o dotfiles-0.0.1.tar.gz && \
+tar -zxvf dotfiles-0.0.1.tar.gz && \
+cd dotfiles-0.0.1 && set -- -f; source ./setup.sh
+```
 
