@@ -58,6 +58,21 @@ This repository contains my configuration files for the tools that I use.
 
 Confused? Read on.
 
+### Brewfile
+
+I use simple Brewfile to manage my apps. The versions aren't pinned, but it's enought to work with my homelab.
+
+To dump current apps to Brewfile I use:
+```bash
+brew bumdle dump
+```
+
+To import from Brewfile:
+```bash
+brew bundl
+```
+
+
 ### tbc
 
 1. Install Ansible (link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[Ansible page])
@@ -84,3 +99,4 @@ python3 -m pip show ansible # Checks the ansible package version
 
 Add Ansible command shell completion
 python3 -m pip install --user argcomplete
+
