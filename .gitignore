@@ -3,3 +3,6 @@
 
 # Repo related
 get-pip.py
+
+# Brewfile
+Brewfile.lock.json
