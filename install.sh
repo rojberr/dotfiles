@@ -21,6 +21,10 @@ set -ex
 # Install Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Load bashrc
+rm -f ~/.bashrc
+ln -s `pwd`/config/.bashrc ~/.bashrc
+
 # # Install Brewfile apps
 brew bundle
 
