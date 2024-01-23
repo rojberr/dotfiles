@@ -21,17 +21,18 @@ set -ex
 # Install Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Load .bash_aliases
+rm -f ~/.bash_aliases
+ln -s `pwd`/config/.bash_aliases ~/.bash_aliases
+
 # Load bashrc
 rm -f ~/.bashrc
 ln -s `pwd`/config/.bashrc ~/.bashrc
+source ~/.bashrc
 
 # # Install Brewfile apps
 brew bundle
 
 # Install NvChar
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
-
-# Load .bash_aliases
-rm -f ~/.bash_aliases
-ln -s `pwd`/config/.bash_aliases ~/.bash_aliases
 
