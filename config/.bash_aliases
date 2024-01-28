@@ -18,13 +18,15 @@ alias d="docker"
 
 # Git aliases
 alias gst='git status'
-alias ga='git add .'
+alias ga='git add'
+alias gaa='git add .'
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff | mate'
 alias gau='git add --update'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
+alias gcm='git commit -m'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gco='git checkout'
