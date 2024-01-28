@@ -2,6 +2,8 @@
 
 Here you will find files I use to configure my Linux/MacOS workstations. 
 
+The idea behind this repo is that it can be used on any system that's running a Bash shell. Just clone the repo, run and install everything with the script. I mostly use Linux/MacOS/WSL.
+
 ![Perfect setup ;)](images/perfect-setup.jpg)
 
 ## Contents 
@@ -11,6 +13,8 @@ What's in here?
 - all my `scripts` that I use daily. See [`scripts/`](https://github.com/rojberr/dotfiles/blob/master/scripts/)
 - all my `shell` settings. See [`shell/`](https://github.com/rojberr/dotfiles/tree/master/shell)
 - all my `configuration` files. See [`config/`](https://github.com/rojberr/dotfiles/tree/master/config)
+
+The configuration files are used by symlinks to config location.
 
 ## Installation 👨‍💻
 
@@ -64,6 +68,9 @@ brew bundle
 
 
 ### tbc
+
+For now I am using Brew for binary installation. Another idea
+is to use ready-to-use binary.
 
 1. Install Ansible (link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[Ansible page])
 ```bash
