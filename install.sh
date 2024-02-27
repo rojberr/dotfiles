@@ -1,5 +1,4 @@
 #!/bin/bash
-
 set -ex
 
 # Install pip for ansible installation
@@ -18,6 +17,9 @@ set -ex
 # Install apps
 # ansible-playbook install-apps.yaml -e ALLOW_ERRORS=no --ask-become-pass
 
+## Default to BASH
+chsh -s /bin/bash
+
 # Install Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -33,6 +35,13 @@ source ~/.bashrc
 # # Install Brewfile apps
 brew bundle
 
+# Install starship
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
 # Install NvChar
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
+# Install bash completions
+kubectl completion bash >/usr/local/etc/bash_completion.d/kubectl
+
+bash
