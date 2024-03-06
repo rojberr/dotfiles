@@ -1,11 +1,16 @@
-# dotfiles
+<h1 align=center>dotfiles | <a href="https://rojberr.github.io/dotfiles/" rel="nofollow">Docs</a></h1>
 
-Here you will find files I use to configure my Linux/MacOS workstations.
+> Here you will find files I use to configure my Linux/MacOS workstations.
 
 The idea behind this repo is that it can be used on any system that's running a Bash shell. Just clone the repo, run and
 install everything with the script. Use with Linux/MacOS/WSL.
 
+**Take a look at the [Documentation page](https://rojberr.github.io/dotfiles/)
+or [dotfiles Wiki](https://github.com/rojberr/dotfiles/wiki)**
+
+<p align="center">
 ![Perfect setup ;)](images/perfect-setup.jpg)
+</p>
 
 ## Contents
 
