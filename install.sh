@@ -44,4 +44,9 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 # Install bash completions
 kubectl completion bash >/usr/local/etc/bash_completion.d/kubectl
 
+# Install Helm plugins
+helm plugin install https://github.com/databus23/helm-diff
+helm plugin install https://github.com/jkroepke/helm-secrets
+helm plugin install https://github.com/aslafy-z/helm-git #--version 0.15.1
+
 bash
