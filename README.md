@@ -1,4 +1,4 @@
-<h1 align=center>rojberr dotfiles | <a href="https://rojberr.github.io/dotfiles/" rel="nofollow">gh-page</a></h1>
+<h1 align=center>Rojberr Dotfiles | <a href="https://rojberr.github.io/dotfiles/" rel="nofollow">Gh-pages 📚</a></h1>
 
 > Here you will find files I use to configure my Linux/MacOS workstations.
 
@@ -8,9 +8,15 @@ install everything with the script. Use with Linux/MacOS/WSL.
 **Take a look at the [Documentation page](https://rojberr.github.io/dotfiles/)
 or [dotfiles Wiki](https://github.com/rojberr/dotfiles/wiki)**
 
+[![Deploy dotfiles Docu to Pages](https://github.com/rojberr/dotfiles/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/rojberr/dotfiles/actions/workflows/gh-pages.yml)
+
+---
+
 <p align="center">
 <kbd><img src="images/perfect-setup.jpg" alt="Perfect setup" title="Perfect setup"/></kbd>
 </p>
+
+---
 
 ## Contents
 
@@ -78,57 +84,19 @@ To import from Brewfile:
 brew bundle
 ```
 
-### tbc
-
-For now I am using Brew for binary installation. Another idea
-is to use ready-to-use binary.
-
-1. Install Ansible (link:https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html[Ansible
-   page])
-
-```bash
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py --user
-python3 -m pip install --user ansible-core==2.12.3
-python3 -m pip install --user ansible
-```
-
-2. Run the playbook
-
-```bash
-ansible-playbook playbooks/install_role.yml
-```
-
-3. Enjoy my setup on your PC 👨‍💻
-
-4. To upgrade ansible you may use:
-
-```bash
-python3 -m pip install --upgrade --user ansible-core==2.12.3
-ansible --version # Checks the ansible-core package version
-python3 -m pip show ansible # Checks the ansible package version
-```
-
-Add Ansible command shell completion
-python3 -m pip install --user argcomplete
-
-### tbc - Git-free installation
-
-To install without using git use:
-
-```bash
-cd; \
-curl -L https://github.com/rojberr/dotfiles/archive/0.0.1.tar.gz -o dotfiles-0.0.1.tar.gz && \
-tar -zxvf dotfiles-0.0.1.tar.gz && \
-cd dotfiles-0.0.1 && set -- -f; source ./setup.sh
-```
-
 ### TODO
 
 shortcuts generalize
 what is not possible to automate should be noted in repo
 autocomplete verbessern
 create symlinks in loop
+
+## Support 🫶
+
+- Star 🌟 this repository.
+- Help spread the word about PaperMod by sharing it on social media and recommending it to your friends. 🗣️
+- You can also sponsor 🏅
+  on [Github Sponsors](https://github.com/sponsors/adityatelange) / [Ko-Fi](https://ko-fi.com/adityatelange).
 
 ### References
 
