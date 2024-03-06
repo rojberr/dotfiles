@@ -1,3 +1,6 @@
+##############################################################################
+# Bash Aliases                                                                #
+##############################################################################
 # Kubernetes aliases
 alias k="kubectl"
 complete -o default -F __start_kubectl k
@@ -40,3 +43,12 @@ alias glp='git log --pretty=format:"%h %s" --graph'
 alias gla='git log --decorate --graph --oneline --all'
 ## to view entire log with commit messages in detail
 alias gld='git log --decorate --graph --all'
+
+# Go up n directories
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+
+# Recursively remove .DS_Store files
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
