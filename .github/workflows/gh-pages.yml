@@ -54,11 +54,9 @@ jobs:
         run: git submodule update --init --recursive
       - name: Update theme to Latest commit
         run: git submodule update --remote --merge
-      - name: Go to docs/
-        run: cd docs/
       - name: Build with Hugo
         run: |
-          hugo \
+          cd docs && hugo \
             --buildDrafts --gc \
             --baseURL ${{ steps.pages.outputs.base_url }}
       - name: Upload artifact
