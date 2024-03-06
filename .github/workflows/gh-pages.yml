@@ -45,7 +45,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: gh-page
+          ref: master
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3

@@ -1,4 +1,4 @@
-<h1 align=center>dotfiles | <a href="https://rojberr.github.io/dotfiles/" rel="nofollow">Docs</a></h1>
+<h1 align=center>rojberr dotfiles | <a href="https://rojberr.github.io/dotfiles/" rel="nofollow">gh-page</a></h1>
 
 > Here you will find files I use to configure my Linux/MacOS workstations.
 
