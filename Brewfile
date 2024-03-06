@@ -56,13 +56,16 @@ brew "unbound"
 brew "gnutls"
 brew "fzf"
 brew "exiftool"
+brew "docker"
 
 # Kubernetes / DevOps
 brew "k9s"
 brew "helmfile"
+brew "kubernetes-cli"
 brew "argocd"
 brew "sops"
 brew "terraform-docs"
+brew "terraform"
 
 # AWS
 tap "aws/tap"
