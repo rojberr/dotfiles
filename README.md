@@ -70,4 +70,10 @@ or [dotfiles Wiki](https://github.com/rojberr/dotfiles/wiki)** 🙂
 - Star 🌟 this repository.
 - Contact me if you have any questions or suggestions. 📣
 
-![img.png](images/dotsymbol.png)
+---
+
+<p align="center">
+<kbd><img src="images/dotsymbol.png" alt="The dotfiles" title="The dotfiles"/></kbd>
+</p>
+
+---
