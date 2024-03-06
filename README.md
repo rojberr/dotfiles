@@ -9,7 +9,7 @@ install everything with the script. Use with Linux/MacOS/WSL.
 or [dotfiles Wiki](https://github.com/rojberr/dotfiles/wiki)**
 
 <p align="center">
-![Perfect setup ;)](images/perfect-setup.jpg)
+<kbd><img src="images/perfect-setup.jpg" alt="Perfect setup" title="Perfect setup"/></kbd>
 </p>
 
 ## Contents
