@@ -1,4 +1,18 @@
-# Bashrc
+##############################################################################
+#   Filename: .bashrc                                                        #
+# Maintainer: rojberr                                                        #
+#        URL: https://github.com/rojberr/dotfiles                            #
+#                                                                            #
+#                                                                            #
+# Sections:                                                                  #
+#   01. General ................. General Bash behavior                      #
+##############################################################################
+
+
+##############################################################################
+# 01. General                                                                #
+##############################################################################
+# Shell prompt
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 brew_etc="$(brew --prefix)/etc" && [[ -r "${brew_etc}/profile.d/bash_completion.sh" ]] && . "${brew_etc}/profile.d/bash_completion.sh"
