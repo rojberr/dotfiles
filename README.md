@@ -10,7 +10,7 @@ Supports both Apple Silicon (M1) and Intel chips.
 or [dotfiles Wiki](https://github.com/rojberr/dotfiles/wiki)**
 
 [![Deploy .files Docu to Pages](https://github.com/rojberr/dotfiles/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/rojberr/dotfiles/actions/workflows/gh-pages.yml)
-[![OpenSSF Scorecard](htt‌ps://api.securityscorecards.dev/projects/github.com/rojberr/dotfiles/badge)](htt‌ps://securityscorecards.dev/viewer/?uri=github.com/rojberr/dotfiles)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/rojberr/dotfiles/badge)](https://securityscorecards.dev/viewer/?uri=github.com/rojberr/dotfiles)
 ---
 
 <p align="center">
