@@ -14,6 +14,9 @@ alias kei="kubectl exec -it"
 alias kpf="kubectl port-forward"
 alias kgnm="kubectl get nodes -o=custom-columns=NAME:.metadata.name,STATUS:.status.conditions[?(@.type==\"Ready\")].status"
 
+export drc="--dry-run=client -o yaml" # To run add $drc at the end
+export drs="--dry-run=server -o yaml"
+
 # Use neovim
 alias v=nvim
 
