@@ -1,10 +1,14 @@
 ##############################################################################
 # Bash Aliases                                                                #
 ##############################################################################
+
+# General
+alias ll="ls -al"
+
 # Kubernetes aliases
 alias k="kubectl"
 complete -o default -F __start_kubectl k
-alias kn="kubectl config set-context --current --namespace"
+alias knc="kubectl config set-context --current --namespace"
 alias kl="kubectl logs"
 alias kd="kubectl describe"
 alias kg="kubectl get"
