@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"strings"
-	"github.com/mgutz/ansi"
+	survey "github.com/AlecAivazis/survey/v2"
 	"github.com/bitfield/script"
+	"github.com/mgutz/ansi"
+	"strings"
 )
-
 
 // Use asciiart logo
 const logo = `
@@ -17,7 +17,19 @@ const logo = `
  \____ |\____/|__|  |__|  |__|____/\___  >____  >
       \/                               \/     \/ `
 
-
+// Wizard with install selections
+var multiQs = []*survey.Question{
+	{
+		Name: "letter",
+		Prompt: &survey.MultiSelect{
+			Message: "What you want to install :",
+			Options: []string{
+				fmt.Sprint("aaa"),
+				fmt.Sprint("bbb"),
+			},
+		},
+	},
+}
 
 func main() {
 
@@ -29,8 +41,18 @@ func main() {
 	// Get the current working directory
 	homedir, _ := script.Exec("bash -c 'echo $HOME'").String()
 	homedir = strings.Replace(homedir, "\n", "", -1)
+	options := []string{}
 
-	fmt.Println(pan + "Welcome to the " + cyan + "Go" + pan + " script" + reset)
-	fmt.Println(homedir)
 	fmt.Println(logo)
+	fmt.Println(pan + "Welcome to the " + cyan + "dotfiles" + pan + " installer script" + reset)
+	fmt.Println("Your homedir: ", homedir)
+
+	// Show wizard with install selections
+	err := survey.Ask(multiQs, &options, survey.WithPageSize(10))
+
+	if err != nil {
+		fmt.Println(err.Error())
+		return
+	}
+
 }
