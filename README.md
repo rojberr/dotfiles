@@ -65,6 +65,15 @@ or [dotfiles Wiki](https://github.com/rojberr/dotfiles/wiki)** 🙂
 - [ ] create symlinks in loop
 - [ ] more content to gh pages
 
+## Build go binary
+
+Clone the repository and execute:
+```
+go build -ldflags="-s -w  -X main.version=vX.X.X" -o dotfiles
+```
+
+To run use `go run main.go` or `./main`
+
 ## Support 🫶
 
 - Star 🌟 this repository.
