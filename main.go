@@ -26,6 +26,7 @@ var installQuestions = []*survey.Question{
 			Message: "Select components to install:",
 			Options: []string{
 				fmt.Sprint(goscripts.DockerType),
+				fmt.Sprint(goscripts.GitType),
 			},
 		},
 	},
@@ -63,12 +64,21 @@ func main() {
 
 	for _, choice := range choices {
 		switch choice {
+
 		case goscripts.DockerType.String():
 			dockerInstaller := &goscripts.Docker{
 				Logm: goscripts.LogManager{},
 				Err:  nil,
 			}
 			installers = append(installers, dockerInstaller)
+
+		case goscripts.GitType.String():
+			gitInstaller := &goscripts.Git{
+				Logm: goscripts.LogManager{},
+				Err:  nil,
+			}
+			installers = append(installers, gitInstaller)
+			
 		default:
 			fmt.Printf("❔ Unexpected option selected: %s.\n", choice)
 		}

@@ -12,7 +12,7 @@ type Docker struct {
 
 func (d Docker) Install(homedir string) error {
 
-	d.Err = d.Logm.RunCommand("brew install install docker")
+	d.Err = d.Logm.RunCommand("brew install docker")
 	if d.Err != nil {
 		d.Logm.AddLog(Failure, "brew install docker failed")
 		return d.Err
